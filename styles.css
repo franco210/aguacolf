@@ -480,3 +480,34 @@ a {
     }
 
 }
+
+
+
+/*aboutUs*/
+
+/* Estilos para la sección "Sobre nosotros" */
+.aboutustext {
+    max-width: 800px; /* Ancho máximo para la sección */
+    margin: 100px auto 50px; /* Centrado horizontalmente y margen superior e inferior */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un aspecto moderno */
+    text-align: center; /* Texto centrado */
+}
+
+.aboutustext h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutustext p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .aboutustext {
+        padding: 10px;
+    }
+}
