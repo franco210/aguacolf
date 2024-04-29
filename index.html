@@ -28,28 +28,24 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="#">
+            <a href="index.html">
              <img src="logos/logobien2.png" alt="Logo de la marca">
             </a>
         </div>
         <nav>
            <ul class="nav-links">
-                <li><a href="equipos.html">Productos</a></li>
-                <li><a href="equipos.html">Servicios</a></li>
-                <li><a href="#aboutus" >Sobre Nosotros</a></li>
+                <li><a href="aboutus.html" >Sobre Nosotros</a></li>
            </ul>            
         </nav>
-        <a class="btn"  href="#" ><button>Contacto</button></a>
+        <a class="btn"  href="index.html#contactUsSection" ><button>Contacto</button></a>
 
          <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
 
 <!---->        <div id="mobile-menu" class="overlay">
 <!---->            <a onclick="closeNav()" class="close">&times;</a>
 <!---->            <div class="overlay-content">
-<!---->                <a  href="equipos.html">Productos</a>
-<!---->                <a  href="equipos.html">Servicios</a>
-<!---->                <a  href="#aboutus">Sobre Nosotros</a>
-<!---->                <a  href="#contacto">Contacto</a>
+<!---->                <a  href="aboutus.html">Sobre Nosotros</a>
+<!---->                <a  href="index.html#contactUsSection">Contacto</a>
 <!---->            </div>
 <!---->        </div>
     
@@ -68,8 +64,8 @@
                                     Diseñamos y fabricamos equipos a medida para el tratamiento de agua, aplicables a todo tipo de proyectos: 
                                     casas, edificios y barrios.</p>
                                 <div class="section__card-buttons">
-                                    <a class="button button-primary" href="#">Quienes Somos?</a>
-                                    <a class="button button-secondary" href="#">Contáctanos</a>
+                                    <a class="button button-primary" href="aboutus.html">Quienes Somos?</a>
+                                    <a class="button button-secondary" href="index.html#contactUsSection">Contáctanos</a>
                                 </div>
                             </div>
                             <div class="section__card-imgs">
@@ -84,8 +80,8 @@
                                 <p class="section__card-text">Brindamos un servicio personalizado con productos y
                                     tecnología de ultima generación.</p>
                                 <div class="section__card-buttons">
-                                    <a class="button button-primary" href="#">Nuestros Equipos</a>
-                                    <a class="button button-secondary" href="#">Contáctanos</a>
+                                    <a class="button button-primary" href="aboutus.html">Quienes somos?</a>
+                                    <a class="button button-secondary" href="index.html#contactUsSection">Contáctanos</a>
                                 </div>
                             </div>
                             <div class="section__card-imgs">
@@ -115,7 +111,7 @@
 
             <!--Contact Us-->
             
-            <div  class="contactUs">
+            <div id="contactUsSection" class="contactUs">
                 <div class="title">
                     <h2></h2>
                 </div>
@@ -128,21 +124,21 @@
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Nombre</span>
-                                        <input type="text" placeholder="Juan">
+                                        <input type="text" placeholder="Inserta tu nombre">
                                     </div>
                                     <div class="inputBox">
                                         <span>Apellido</span>
-                                        <input type="text" placeholder="Perez">
+                                        <input type="text" placeholder="Inserta tu apellido">
                                     </div>
                                 </div>
                                 <div class="row50">
                                     <div class="inputBox">
                                         <span>Mail</span>
-                                        <input type="text" placeholder="Juan@gmail.com">
+                                        <input type="text" placeholder="Inserta tu dirreccion de mail">
                                     </div>
                                     <div class="inputBox">
                                         <span>Telefono</span>
-                                        <input type="text" placeholder="+1125434">
+                                        <input type="text" placeholder="Inserta tu numero telefonico">
                                     </div>
                                 </div>
                                 <div class="row100">
@@ -153,7 +149,7 @@
                                 </div>
                                 <div class="row100">
                                     <div class="inputBox">
-                                        <input type="submit" value="Send">
+                                        <input type="submit" value="Enviar">
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +157,7 @@
                     </div>
 
                     <!--Info-->
-                    <div class="contact info">
+                    <div id="contactinfo" class="contact info">
                         <h3>Informacion de contacto</h3>
                         <div class="infoBox">
                             <div>
@@ -178,15 +174,14 @@
                             </div>
                             <!--Redes sociales-->
                             <ul class="sci">
-                                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                <li><a href="https://www.facebook.com/aguacolf"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                <li><a href="https://www.instagram.com/aguacolf/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <!--Map-->
-                    <div class="contact map">
+                    <div id="map" class="contact map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13184.815010931972!2d-60.247774!3d-34.2943514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b913fe8fc617b3%3A0x4b4cd97aa1ea36fa!2sAGUACOLF!5e0!3m2!1ses!2sar!4v1714151532599!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -213,11 +208,11 @@
           <di v class="footer__sections-container container">
              
               <article class="footer__section">
-                  <h3 class="footer__section-title">Contacto</h3>
+                  <h3 class="footer__section-title" >Contacto</h3>
                   <ul class="footer__section-table">
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Argentina</a>
-                      </li>
+                        <a class="footer__section-link" href="index.html#contactinfo">Salto, Buenos Aires, Argentina</a>
+                    </li>
               
                   </ul>
               </article>
@@ -226,22 +221,22 @@
                   <h3 class="footer__section-title">Tratamiento de Aguas</h3>
                   <ul class="footer__section-table">
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Ablandamiento</a>
+                          <a class="footer__section-link">Ablandamiento</a>
                       </li>
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Intercambio ionico</a>
+                          <a class="footer__section-link">Intercambio ionico</a>
                       </li>
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Filtros de carbon activado</a>
+                          <a class="footer__section-link">Filtros de carbon activado</a>
                       </li>
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Osmosis Inversa</a>
+                          <a class="footer__section-link">Osmosis Inversa</a>
                       </li>
                       <li class="footer__section-links">
-                        <a class="footer__section-link" href="#">Equipos de Ozono</a>
+                        <a class="footer__section-link" >Equipos de Ozono</a>
                     </li>
                     <li class="footer__section-links">
-                        <a class="footer__section-link" href="#">Luces UV</a>
+                        <a class="footer__section-link" >Luces UV</a>
                     </li>
                   
                   </ul>
@@ -252,37 +247,31 @@
                   <ul class="footer__section-table">
       
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Asesoramiento</a>
+                          <a class="footer__section-link">Asesoramiento</a>
                       </li>
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Mantenimiento de equipos</a>
+                          <a class="footer__section-link">Mantenimiento de equipos</a>
                       </li>
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Personalización de equipos</a>
+                          <a class="footer__section-link">Personalización de equipos</a>
                       </li>
                       <li class="footer__section-links">
-                          <a class="footer__section-link" href="#">Garantía de calidad</a>
+                          <a class="footer__section-link">Garantía de calidad</a>
                       </li>
                   </ul>
               </article>
 
               <article class="footer__section">
-                  <h3 class="footer__section-title">Siguenos</h3>
-                  <div class="social__container">
-                      <a href="#" class="social__icon">
-                          <img src="img/facebook.svg" alt="Facebook">
-                      </a>                                               
-                      <a href="#" class="social__icon">
-                          <img src="img/instagram.svg" alt="Instagram">
-                      </a>
-                      <a href="#" class="social__icon">
-                          <img src="img/twitter-x.svg" alt="Twitter-X">
-                      </a> 
-                      <a href="#" class="social__icon">
-                          <img src="/img/linkedin.svg" alt="LinkedIn">
-                      </a>
-                  </div>
-              </article>
+                <h3 class="footer__section-title">Siguenos</h3>
+                <div class="social__container">
+                    <a href="https://www.facebook.com/aguacolf" class="social__icon">
+                        <img src="img/facebook.svg" alt="Facebook">
+                    </a>                                               
+                    <a href="https://www.instagram.com/aguacolf/?hl=es-la" class="social__icon">
+                        <img src="img/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+            </article>
 
           </div>
       </section>
