@@ -1,0 +1,482 @@
+:root {
+  --black:#000000;
+  --white:#f6ffff;
+  --dark-blue: #042490;
+  --blue:#0062ff;
+  --yellow:#ffbc0e;
+  --pink:#a50202;
+  --light-pink:#463131;
+  --green:#00b090;
+  --background-gray:#c72323;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+.body{
+    /*background-color: var(--white); */
+    min-width: 400px;
+    font-family: 'Nunito',sans-serif;
+
+}
+
+
+
+
+.header {
+    background-color: var(--black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    position: fixed; /* Fija el header en la parte superior de la pantalla */
+    width: 100%; /* Ancho completo del viewport */
+    top: 0; /* Fija el header en la parte superior */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 30px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover,
+/**/.overlay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var(--white); 
+}
+
+.header .nav-links a:hover{
+    color: var(--yellow);
+}
+
+/**/.menu {
+    display:none;
+}
+
+.header .btn button,
+/**/.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: var(--green);
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+/**/.header .menu button:hover{
+    background-color: #e2f1f8;
+    color: var(--yellow);
+    transform: scale(1.1);
+}
+
+
+/**/@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+
+
+/*Nav Mobile*/
+
+.header a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #ffbc0e;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* Carousel */
+body,input {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 20px;
+}
+
+.button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 700;    
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-primary {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.button-primary:hover {
+    background-color: var(--dark-blue);
+    transition: background-color 0.3s;
+}
+
+.button-secondary {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.button-secondary:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: background-color 0.3s;
+}
+
+.input {
+    border: none;
+    font-size: 1.1rem;
+    background-color: var(--white);
+    padding: 10px;
+    outline: none;
+    color: var(--dark-purple);
+    border-radius: 5px;
+}
+
+
+
+/*ContactUs*/
+
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+
+}
+.contactUs .title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs.title h2{
+    color: var(--black);
+    font-weight: 500;
+}
+
+
+
+.form{
+    grid-area: form;
+}
+
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px;
+    background: var(--blue);
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+
+.box{
+    position:relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+
+.contact h3{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 100px;
+}
+
+/* Formulario del Contactus*/
+
+
+.box h3{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.formBox{
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.inputBox{
+    display: flex ;
+    flex-direction:  column;
+    margin-bottom: 10px;
+    width: 50%;
+
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+
+}
+
+.inputBox span{
+    color: var(--dark-blue);
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: var(--green);
+    color: var(--white);
+    border:none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14 px 15 px;
+
+
+}
+
+.inputBox ::placeholder{
+    color : #999;
+}
+
+/*Info*/
+.info{
+    background: var(--dark-blue);
+    
+
+}
+
+.info h3{
+    color: var(--white);
+}
+
+.info .infoBox div{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: var(--white);
+    background: var(--blue);  /*el color de fondo de los iconos*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+
+.info .infoBox div p{
+    color: var(--white);
+    font-size: 1.1em;
+}
+
+.info .infoBox div a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.sci{
+    margin-top: 40px;
+    display:flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: var(--white);
+    font-size: 2em;
+    color: #ccc;
+
+}
+
+.sci li a :hover{
+    color: #fff;
+}
+
+.map{
+    padding: 0px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Responsive Design del ContactUs*/
+@media (max-width: 991px)
+{
+    body {
+       background: var(--white);
+
+    }
+    .contactUs{
+        padding: 20px;
+    }
+    .box {
+        position:relative;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "form"
+        "info"
+        "map";
+    }
+   
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+
+    }
+
+    .inputBox{
+        width:100%;
+    }
+
+    .contact {
+        padding:30px;
+    }
+    
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+
+}

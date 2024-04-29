@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agua Colf</title>
+    <link rel="icon" href="/logos/33.png">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <!--css carousel-->
+   <link rel="stylesheet" href="/section-carousel.css">
+    <!-- css footer -->
+    <link rel="stylesheet" href="/footer.css">
+    <!-- css-->
+    <link rel="stylesheet" href="/styles.css" type="image/x-icon">
+    <!-- js --> 
+    <script type="text/javascript" src="nav.js"></script>
+    <!--Link Iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+             <img src="logos/logobien2.png" alt="Logo de la marca">
+            </a>
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="equipos.html">Productos</a></li>
+                <li><a href="equipos.html">Servicios</a></li>
+                <li><a href="#aboutus" >Sobre Nosotros</a></li>
+           </ul>            
+        </nav>
+        <a class="btn"  href="#" ><button>Contacto</button></a>
+
+         <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a  href="equipos.html">Productos</a>
+<!---->                <a  href="equipos.html">Servicios</a>
+<!---->                <a  href="#aboutus">Sobre Nosotros</a>
+<!---->                <a  href="#contacto">Contacto</a>
+<!---->            </div>
+<!---->        </div>
+    
+    </header>
+
+
+    <div class="content">
+            <!--touch logo--> 
+            <div id="home" >
+                <section class="carousel-section">
+                    <article class="carousel__sections-cards container">
+                        <div class="section__card show">
+                            <div class="section__card-content">
+                                <h1 class="section__card-title">Bienvenido a Agua Colf</h1>
+                                <p class="section__card-text">Brindamos asesoramiento personalizado. 
+                                    Diseñamos y fabricamos equipos a medida para el tratamiento de agua, aplicables a todo tipo de proyectos: 
+                                    casas, edificios y barrios.</p>
+                                <div class="section__card-buttons">
+                                    <a class="button button-primary" href="#">Quienes Somos?</a>
+                                    <a class="button button-secondary" href="#">Contáctanos</a>
+                                </div>
+                            </div>
+                            <div class="section__card-imgs">
+                                <div class="section__card-img">
+                                    <img src="imgnegocio/img6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__card">
+                            <div class="section__card-content">
+                                <h1 class="section__card-title">Solucionamos tus problemas</h1>
+                                <p class="section__card-text">Brindamos un servicio personalizado con productos y
+                                    tecnología de ultima generación.</p>
+                                <div class="section__card-buttons">
+                                    <a class="button button-primary" href="#">Nuestros Equipos</a>
+                                    <a class="button button-secondary" href="#">Contáctanos</a>
+                                </div>
+                            </div>
+                            <div class="section__card-imgs">
+                                <div class="section__card-img">
+                                    <img src="imgnegocio/img5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>   
+                        
+                            <div class="section__card-imgs">
+                                <div class="section__card-img">
+                                    <img src="img/img-carousel-3.png" alt="">
+                                </div>
+                            </div>
+                        <div class="carousel-control">
+                            <a class="carousel__control prev" href="#"><i class="bi bi-arrow-left"></i></a>
+                            <a class="carousel__control next" href="#"><i class="bi bi-arrow-right"></i></a>
+                        </div>         
+                    </article>        
+                </section>
+            </div>
+
+
+
+
+
+
+            <!--Contact Us-->
+            
+            <div  class="contactUs">
+                <div class="title">
+                    <h2></h2>
+                </div>
+                <div class="box">
+                    <!--Form-->
+                    <div class="contact form">
+                        <h3>Contactanos</h3>
+                        <form>
+                            <div class="formBox">
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Nombre</span>
+                                        <input type="text" placeholder="Juan">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Apellido</span>
+                                        <input type="text" placeholder="Perez">
+                                    </div>
+                                </div>
+                                <div class="row50">
+                                    <div class="inputBox">
+                                        <span>Mail</span>
+                                        <input type="text" placeholder="Juan@gmail.com">
+                                    </div>
+                                    <div class="inputBox">
+                                        <span>Telefono</span>
+                                        <input type="text" placeholder="+1125434">
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <span>Message</span>
+                                        <textarea placeholder="Escribi tu mensaje"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row100">
+                                    <div class="inputBox">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--Info-->
+                    <div class="contact info">
+                        <h3>Informacion de contacto</h3>
+                        <div class="infoBox">
+                            <div>
+                                <span><ion-icon name="location"></ion-icon></span>
+                                <p>Salto, Buenos Aires, <br>Argentina</p>
+                            </div>
+                            <div>
+                                <span><ion-icon name="mail"></ion-icon></span>
+                                <a href="mailto:info@colf.com.ar">info@colf.com.ar</a>
+                            </div>
+                            <div>
+                                <span><ion-icon name="call"></ion-icon></span>
+                                <a href="tel:+542474562245">+542474562247</a>
+                            </div>
+                            <!--Redes sociales-->
+                            <ul class="sci">
+                                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Map-->
+                    <div class="contact map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13184.815010931972!2d-60.247774!3d-34.2943514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b913fe8fc617b3%3A0x4b4cd97aa1ea36fa!2sAGUACOLF!5e0!3m2!1ses!2sar!4v1714151532599!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <section class="footer__sections">
+          <di v class="footer__sections-container container">
+             
+              <article class="footer__section">
+                  <h3 class="footer__section-title">Contacto</h3>
+                  <ul class="footer__section-table">
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Argentina</a>
+                      </li>
+              
+                  </ul>
+              </article>
+
+              <article class="footer__section">
+                  <h3 class="footer__section-title">Tratamiento de Aguas</h3>
+                  <ul class="footer__section-table">
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Ablandamiento</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Intercambio ionico</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Filtros de carbon activado</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Osmosis Inversa</a>
+                      </li>
+                      <li class="footer__section-links">
+                        <a class="footer__section-link" href="#">Equipos de Ozono</a>
+                    </li>
+                    <li class="footer__section-links">
+                        <a class="footer__section-link" href="#">Luces UV</a>
+                    </li>
+                  
+                  </ul>
+              </article>
+              
+              <article class="footer__section">
+                  <h3 class="footer__section-title">Servicios</h3>
+                  <ul class="footer__section-table">
+      
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Asesoramiento</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Mantenimiento de equipos</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Personalización de equipos</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" href="#">Garantía de calidad</a>
+                      </li>
+                  </ul>
+              </article>
+
+              <article class="footer__section">
+                  <h3 class="footer__section-title">Siguenos</h3>
+                  <div class="social__container">
+                      <a href="#" class="social__icon">
+                          <img src="img/facebook.svg" alt="Facebook">
+                      </a>                                               
+                      <a href="#" class="social__icon">
+                          <img src="img/instagram.svg" alt="Instagram">
+                      </a>
+                      <a href="#" class="social__icon">
+                          <img src="img/twitter-x.svg" alt="Twitter-X">
+                      </a> 
+                      <a href="#" class="social__icon">
+                          <img src="/img/linkedin.svg" alt="LinkedIn">
+                      </a>
+                  </div>
+              </article>
+
+          </div>
+      </section>
+      <section class="footer__copy">
+          <p class="footer__copy-text" id="copyright">
+              Copyright &copy;
+              <span id="current-year"></span> Todos los derechos reservados. By
+              <a class="footer__copy-link" target="_blank"
+                  href="">AguaColf</a>
+          </p>
+      </section>
+  </footer>
+
+
+
+
+</body>
+</html>
