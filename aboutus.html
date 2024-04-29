@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agua Colf</title>
+    <link rel="icon" href="logos/33.png">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <!--css carousel-->
+   <link rel="stylesheet" href="section-carousel.css">
+    <!-- css footer -->
+    <link rel="stylesheet" href="footer.css">
+    <!-- css-->
+    <link rel="stylesheet" href="styles.css" type="image/x-icon">
+    <!-- js --> 
+    <script type="text/javascript" src="nav.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logos/logobien2.png" alt="Logo de la marca">
+               </a>
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="aboutus.html" >Sobre Nosotros</a></li>
+           </ul>            
+        </nav>
+        <a class="btn"  href="index.html#contactUsSection" ><button>Contacto</button></a>
+
+         <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a  href="aboutus.html">Sobre Nosotros</a>
+<!---->                <a  href="index.html#contactUsSection">Contacto</a>
+<!---->            </div>
+<!---->        </div>
+    
+    </header>
+
+
+    <div class="aboutustext">
+        <h3>Historia</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id est. Sed id nisl vitae nisl mollis aliquet. Sed sit amet nunc sit amet nisl lacinia lacinia.</p>
+        <h3>Mision</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id est. Sed id nisl vitae nisl mollis aliquet. Sed sit amet nunc sit amet nisl lacinia lacinia.</p>
+        <h3>Vision</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc at cursus pellentesque, nisl eros pellentesque quam, a faucibus nisl nunc id est. Sed id nisl vitae nisl mollis aliquet. Sed sit amet nunc sit amet nisl lacinia lacinia.</p>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <section class="footer__sections">
+            <di v class="footer__sections-container container">
+               
+                <article class="footer__section">
+                    <h3 class="footer__section-title" >Contacto</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                          <a class="footer__section-link" href="index.html#contactinfo">Salto, Buenos Aires, Argentina</a>
+                      </li>
+                
+                    </ul>
+                </article>
+  
+                <article class="footer__section">
+                    <h3 class="footer__section-title">Tratamiento de Aguas</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Ablandamiento</a>
+                        </li>
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Intercambio ionico</a>
+                        </li>
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Filtros de carbon activado</a>
+                        </li>
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Osmosis Inversa</a>
+                        </li>
+                        <li class="footer__section-links">
+                          <a class="footer__section-link" >Equipos de Ozono</a>
+                      </li>
+                      <li class="footer__section-links">
+                          <a class="footer__section-link" >Luces UV</a>
+                      </li>
+                    
+                    </ul>
+                </article>
+                
+                <article class="footer__section">
+                    <h3 class="footer__section-title">Servicios</h3>
+                    <ul class="footer__section-table">
+        
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Asesoramiento</a>
+                        </li>
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Mantenimiento de equipos</a>
+                        </li>
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Personalización de equipos</a>
+                        </li>
+                        <li class="footer__section-links">
+                            <a class="footer__section-link">Garantía de calidad</a>
+                        </li>
+                    </ul>
+                </article>
+  
+                <article class="footer__section">
+                  <h3 class="footer__section-title">Siguenos</h3>
+                  <div class="social__container">
+                      <a href="https://www.facebook.com/aguacolf" class="social__icon">
+                          <img src="img/facebook.svg" alt="Facebook">
+                      </a>                                               
+                      <a href="https://www.instagram.com/aguacolf/?hl=es-la" class="social__icon">
+                          <img src="img/instagram.svg" alt="Instagram">
+                      </a>
+                  </div>
+              </article>
+  
+            </div>
+        </section>
+        <section class="footer__copy">
+            <p class="footer__copy-text" id="copyright">
+                Copyright &copy;
+                <span id="current-year"></span> Todos los derechos reservados. By
+                <a class="footer__copy-link" target="_blank"
+                    href="">AguaColf</a>
+            </p>
+        </section>
+    </footer>
+  
+
+
+
+
+</body>
+</html>
