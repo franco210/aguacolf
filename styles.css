@@ -234,31 +234,6 @@ a {
 }
 
 
-/*Carousel de imagenes2*/
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: 300px; /* Ajusta la altura según sea necesario */
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    width: 100%;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-}
-
-.carousel-item.active {
-    opacity: 1;
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 600px) {
-    .carousel {
-        height: 200px; /* Ajusta la altura para pantallas pequeñas */
-    }
-}
 
 
 
