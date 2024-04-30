@@ -96,3 +96,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mostrar la primera tarjeta sin transiciones al cargar la página
     showCard(currentCardIndex, 'next');
   });
+
+
+//carousel 2
+let carouselItems = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+
+function changeCarouselItem() {
+    carouselItems[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    carouselItems[currentIndex].classList.add('active');
+}
+
+setInterval(changeCarouselItem, 3000); // Cambia la imagen cada 3 segundos
