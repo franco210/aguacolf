@@ -3,11 +3,12 @@
   --white:#f6ffff;
   --dark-blue: #042490;
   --blue:#0062ff;
-  --yellow:#ffbc0e;
-  --pink:#a50202;
-  --light-pink:#463131;
-  --green:#00b090;
-  --background-gray:#c72323;
+  --yellow:#FF8C00;
+  --more-blue:#042948;
+  --background-gray:#3C434E;
+  --less-blue:#24D0FF;
+  --blue-green: #20B2AA; 
+
 }
 
 
@@ -80,7 +81,7 @@
 }
 
 .header .nav-links a:hover{
-    color: var(--yellow);
+    color: var(--white);
 }
 
 /**/.menu {
@@ -91,7 +92,7 @@
 /**/.header .menu button{
     margin-left: 20px;
     font-weight: 700;
-    color: var(--green);
+    color: var(--blue-green);
     padding: 9px 25px;
     background: #eceff1;
     border: none;
@@ -103,7 +104,7 @@
 .header .btn button:hover,
 /**/.header .menu button:hover{
     background-color: #e2f1f8;
-    color: var(--yellow);
+    color: var(--bl);
     transform: scale(1.1);
 }
 
@@ -179,7 +180,7 @@
 }
 
 
-/* Carousel */
+/* Carousel 1*/
 body,input {
     font-family: 'Nunito', sans-serif;
     background-color: var(--white);
@@ -235,6 +236,65 @@ a {
 
 
 
+/*carrousel 2*/
+.containercarrousel {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: contain;
+
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+
 
 
 /*ContactUs*/
@@ -243,6 +303,7 @@ a {
     position: relative;
     width: 100%;
     padding: 40px 100px;
+
 
 }
 .contactUs .title{
@@ -261,6 +322,7 @@ a {
 
 .form{
     grid-area: form;
+    border-radius: 10px;
 }
 
 .info{
@@ -306,6 +368,7 @@ a {
 .formBox{
     position: relative;
     width: 100%;
+    border-radius: 16px;
 }
 
 .formBox .row50 {
@@ -340,6 +403,7 @@ a {
     font-size: 1.1em;
     outline: none;
     border: 1px solid #333;
+    border-radius: 5px;
 }
 
 .inputBox textarea{
@@ -350,9 +414,10 @@ a {
     resize: none;
     min-height: 220px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 .inputBox input[type="submit"]{
-    background: var(--green);
+    background: var(--blue-green);
     color: var(--white);
     border:none;
     font-size: 1.1em;
@@ -371,6 +436,7 @@ a {
 /*Info*/
 .info{
     background: var(--dark-blue);
+    border-radius: 10px;
     
 
 }
@@ -412,22 +478,27 @@ a {
 .sci{
     margin-top: 40px;
     display:flex;
+    
 }
 
 .sci li{
     list-style: none;
     margin-right: 15px;
+    
 }
 
 .sci li a{
     color: var(--white);
     font-size: 2em;
     color: #ccc;
+    margin-right:20px;
+   
 
 }
 
 .sci li a :hover{
     color: #fff;
+    transform: scale(1.2);
 }
 
 .map{
@@ -510,4 +581,76 @@ a {
     max-width: 600px;
     text-align: justify;
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Brochure*/
+
+.brochure-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px; /* Space between the icon and the text */
+}
+
+.brochure-link a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--black); /* Tomato red background */
+    color: var(--white); /* White text */
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.brochure-link a:hover {
+    background-color: var(--more-blue); /* Darker red for hover effect */
+}
+
+.brochure-link a svg {
+    width: 32px; /* Default size */
+    height: 32px; /* Default size */
+    margin:10px;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+   .brochure-link a {
+        padding: 8px 16px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+   .brochure-link a {
+        padding: 6px 12px; /* Further reduce padding for very small screens */
+    }
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+   .brochure-link a svg {
+        width: 48px; /* Larger size for smaller screens */
+        height: 48px; /* Larger size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+   .brochure-link a svg {
+        width: 64px; /* Even larger size for very small screens */
+        height: 64px; /* Even larger size for very small screens */
+    }
 }
