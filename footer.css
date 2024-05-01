@@ -55,6 +55,7 @@
 
 .social__icon img {
     height: 28px;
+    width: auto;
 }
 
 .suscribe__container-form {
