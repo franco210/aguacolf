@@ -1,5 +1,6 @@
 // nav
 function openNav(){
+  event.preventDefault();
     document.getElementById("mobile-menu").style.width = "100%";
 }
 
